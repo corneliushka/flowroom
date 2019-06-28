@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
-import Ninjas from './Ninjas';
+import Navbar from './components/Navbar';
+import { BrowserRouter, Route} from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Post from './components/Post'
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>My first React app!</h1>
-        <p>Welcome :D</p>
-        <Ninjas name="Ryu" age="25" belt="black"/>
-        <Ninjas name="Yoshi" age="30" belt="grey"/>
-
-      </div>
-    )
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/:post_id" component={Post} /> {/* we get access to the extra information in the object automatically */}       
+        </div>
+      </BrowserRouter>
+    );
   }
+
 }
 
-export default App; 
+export default App;
