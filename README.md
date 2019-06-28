@@ -3,6 +3,9 @@ This project is based on a [Net Ninja React+Redux](https://www.youtube.com/watch
 
 ## Description
 
+Objectif: 
+Mockup:
+
 ## Things learned 
 
 - Outputting Lists :  
