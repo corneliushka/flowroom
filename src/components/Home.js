@@ -12,7 +12,7 @@ class Home extends Component {
             console.log(res)
             this.setState({
                 posts: res.data.slice(0, 10)
-            })
+            }) // the response data with properties (id, title, ...)
         })
     }
     render(){
@@ -22,7 +22,7 @@ class Home extends Component {
                 return (
                     <div className="post card" key={post.id}>
                         <div className="card-content">
-                            <Link to={'/' + post.id}> 
+                            <Link to={'/' + post.id}> {/* we surround the post and give an url to it */}
                             <span className="card-title">{post.title}</span>
                             </Link>
                             <p>{post.body}</p>
