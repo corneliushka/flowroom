@@ -15,6 +15,24 @@ p {
   padding: 15px;
 }
 
+.home .post img {
+  position: absolute;
+  top: 0.2em;
+  left: -50px;
+  opacity: 0.8;
+  width: 4rem;
+  height: 4rem; 
+  margin: 2em;
+}
+
+.home .post {
+  overflow: hidden;
+}
+
+.home .post {
+  overflow: hidden;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
