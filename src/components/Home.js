@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Hint from '../hint.png'
+import { connect } from 'react-redux' // we invoke this function + export the component wrapped in this
 
 class Home extends Component {
-    state = {
+
+    // Nous n'allons plus utiliser Axios ni le state dans le component (il sera dans le store maintenant)
+    /*     state = {
         posts: [ ]
     }
     componentDidMount(){
@@ -15,9 +18,11 @@ class Home extends Component {
                 posts: res.data.slice(0, 10)
             }) // the response data with properties (id, title, ...)
         })
-    }
+    } */
+
     render(){
-        const { posts } = this.state;
+        console.log(this.props)
+        const { posts } = this.props; // we are cycling in the props received by the component, instead of the state 
         const postList = posts.length ? (
             posts.map(post => {
                 return (
@@ -42,7 +47,12 @@ class Home extends Component {
             </div>
         )
     }
-
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+    return {
+        posts: state.posts
+    }
+}
+
+export default connect(mapStateToProps)(Home);
