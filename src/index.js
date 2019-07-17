@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 import { createStore } from 'redux';
-import { Provider} from 'react-redux';
+import { Provider} from 'react-redux'; // will sorround and wrap our root App component + pass the store into provider (see bellow)
 import rootReducer from './reducers/rootReducer';
 
 const store = createStore(rootReducer);

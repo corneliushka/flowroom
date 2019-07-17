@@ -7,9 +7,9 @@ const Navbar = (props) => {
         props.history.push('/about')
     }, 2000)  */
     return (
-        <nav className="nav-wrapper red darken-3">
+        <nav className="nav-wrapper blue darken-3">
             <div className="container">
-                <a className="brand-logo">Time2Route</a>
+                <a className="brand-logo">flowroom</a>
                 <ul className="right">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>

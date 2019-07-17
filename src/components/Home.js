@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 // import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Hint from '../hint.png'
-import { connect } from 'react-redux' // we invoke this function + export the component wrapped in this
+import { connect } from 'react-redux' // we invoke this function + export the component wrapped in this (see bellow)
 
 class Home extends Component {
-
     // Nous n'allons plus utiliser Axios ni le state dans le component (il sera dans le store maintenant)
     /*     state = {
         posts: [ ]
@@ -19,7 +18,6 @@ class Home extends Component {
             }) // the response data with properties (id, title, ...)
         })
     } */
-
     render(){
         console.log(this.props)
         const { posts } = this.props; // we are cycling in the props received by the component, instead of the state 

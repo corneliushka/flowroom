@@ -1,3 +1,5 @@
+// ABOUT REDUX 
+
 
 
 const { createStore } = Redux; // 1. importing Redux
