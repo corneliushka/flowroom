@@ -19,6 +19,7 @@ p {
   width: 100%;
   height: 3em;
   background-image: url(./assets/img/blueprint.jpg);
+  font-size: 4em;
   display: flex;
   flex-direction: column;
   align-items: center;
