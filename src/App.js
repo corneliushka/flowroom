@@ -20,8 +20,8 @@ class App extends Component {
             <Route path='/flowroom/about' component={About} />
             <Route path='/flowroom/contact' component={Contact} />
             <Route path='/flowroom/:post_id' component={Post} /> 
-            <Route render={() => <Redirect to={"/flowroom"}/>} />                </Switch>
-        </div>
+{/*             <Route render={() => <Redirect to={"/flowroom"}/>} />                </Switch>
+ */}        </div>
       </BrowserRouter>
     );
   }
