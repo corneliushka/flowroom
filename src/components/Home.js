@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import axios from 'axios'
 import { Link } from 'react-router-dom'
-import Hint from '../hint.png'
+import Hint from '../assets/img/hint.png'
 import { connect } from 'react-redux' // we invoke this function + export the component wrapped in this (see bellow)
 
 class Home extends Component {

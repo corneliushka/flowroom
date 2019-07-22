@@ -12,6 +12,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
+          <h3 className="brand-logo center cover">FlowRoom</h3>
           <Navbar />
           <Switch>
             <Route exact path='/' component={Home} />
