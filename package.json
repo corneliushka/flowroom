@@ -20,7 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://corneliushka.github.io/flowroom/",
+  "homepage": "https://corneliushka.github.io/flowroom/home",
   "eslintConfig": {
     "extends": "react-app"
   },

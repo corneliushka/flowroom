@@ -10,9 +10,9 @@ const Navbar = (props) => {
         <nav className="nav-wrapper blue darken-3">
             <div className="container">
                 <ul className="right">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li> {/* NavLink permits to have a class active, it helps to stylizing when URL matches */}
+                    <li><Link to="/flowroom/home">Home</Link></li>
+                    <li><Link to="/flowroom/about">About</Link></li>
+                    <li><NavLink to="/flowroom/contact">Contact</NavLink></li> {/* NavLink permits to have a class active, it helps to stylizing when URL matches */}
                 </ul>
             </div>
         </nav>

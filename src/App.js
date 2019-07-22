@@ -15,11 +15,10 @@ class App extends Component {
           <h3 className="brand-logo center cover">FlowRoom</h3>
           <Navbar />
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/flowroom' component={Home} /> {/* the path by default when deployed */}
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path="/:post_id" component={Post} /> {/* we'll get access to the extra information in the object automatically */}       
+            <Route exact path='/flowroom/home' component={Home} />
+            <Route path='/flowroom/about' component={About} />
+            <Route path='/flowroom/contact' component={Contact} />
+            <Route path="/flowroom/:post_id" component={Post} /> {/* we'll get access to the extra information in the object automatically */}       
           </Switch>
         </div>
       </BrowserRouter>
