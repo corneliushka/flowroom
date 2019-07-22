@@ -16,6 +16,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/flowroom' component={Home} /> {/* the path by default when deployed */}
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path="/:post_id" component={Post} /> {/* we'll get access to the extra information in the object automatically */}       
