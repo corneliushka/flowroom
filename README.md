@@ -28,7 +28,7 @@ __June 2019:__
 - Programmatic Redirects:  
 - High Order Components : supercharged component (wrapped),  
 - Using Axios :  
-- Route Parameters :  
+- Route Parameters + deployement (react app on github pages)  
 
 __July 2019:__
 
