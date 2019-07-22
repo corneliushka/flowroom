@@ -7,10 +7,10 @@ const Navbar = (props) => {
         props.history.push('/about')
     }, 2000)  */
     return (
-        <nav className="nav-wrapper blue darken-3">
+        <nav className="nav-wrapper grey darken-3">
             <div className="container">
                 <ul className="right">
-                    <li><Link to="/flowroom/home">Home*</Link></li>
+                    <li><Link to="/flowroom/home">Home</Link></li>
                     <li><Link to="/flowroom/about">About</Link></li>
                     <li><NavLink to="/flowroom/contact">Contact</NavLink></li> {/* NavLink permits to have a class active, it helps to stylizing when URL matches */}
                 </ul>
