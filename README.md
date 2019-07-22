@@ -29,3 +29,17 @@ __June 2019:__
 - High Order Components : supercharged component (wrapped),  
 - Using Axios :  
 - Route Parameters :  
+
+__July 2019:__
+
+(Redux)
+- Reducers,
+- Store subscriptions, 
+- Mapping state to props / Map dispatch to props,
+- Actions creators,
+
+(Firebase)
+- (to coming) Authentification
+- (to coming) Firestore
+- (to coming) Cloud functions
+- (to coming) Hosting
