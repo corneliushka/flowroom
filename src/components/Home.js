@@ -27,7 +27,7 @@ class Home extends Component {
                     <div className="post card" key={post.id}>
                         <img src={Hint} alt="an insightful bulb"/>
                         <div className="card-content">
-                            <Link to={'/' + post.id}> {/* we surround the post and give an url to it */}
+                            <Link to={'/flowroom/' + post.id}> {/* we surround the post and give an url to it */}
                             <span className="card-title">{post.title}</span>
                             </Link>
                             <p>{post.body}</p>
