@@ -12,16 +12,15 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <h3 className="brand-logo center cover">FlowRoom</h3>
+          <a href="/flowroom"><h3 className="brand-logo center cover">FlowRoom</h3></a>
           <Navbar />
           <Switch>
-            {/* path to delete after development finished */}
-            <Route path='/flowroom/' component={Home} />
+            <Route exact path='/flowroom' component={Home} />
+            <Route path='/flowroom/home' component={Home} />
             <Route path='/flowroom/about' component={About} />
             <Route path='/flowroom/contact' component={Contact} />
-            <Route path="/flowroom/:post_id" component={Post} /> {/* we'll get access to the extra information in the object automatically */}
-            <Route render={() => <Redirect to={"/flowroom"}/>} />       
-          </Switch>
+            <Route path='/flowroom/:post_id' component={Post} /> 
+            <Route render={() => <Redirect to={"/flowroom"}/>} />                </Switch>
         </div>
       </BrowserRouter>
     );
