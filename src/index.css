@@ -50,3 +50,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* 
+.consulting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} */

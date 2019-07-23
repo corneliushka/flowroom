@@ -9,8 +9,10 @@ const Contact = (props) => {
     return (
         <div className="container">
             <h4 className="center">Contact</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis dicta odit quibusdam maiores, nostrum labore eum aperiam quaerat voluptatem natus itaque sint enim sequi quidem eos ratione ex ipsum reiciendis!</p>
-        </div>
+            <h5>Corneliu GAINA - aspirant Junior Web Developer from BeCode</h5>
+            <p><a href="https://www.linkedin.com/in/corneliugaina/">LinkedIn</a></p>
+            <p><a href="https://github.com/corneliushka">GitHub</a></p>
+________</div>
     )
 }
 
