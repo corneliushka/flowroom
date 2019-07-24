@@ -10,7 +10,7 @@ const Navbar = (props) => {
         props.history.push('/about')
     }, 2000)  */
     return (
-        <nav className="nav-wrapper purple lighten-5">
+        <nav className="nav-wrapper purple  lighten-5">
             <div className="container">
                 <ul className="right blue darken-1 activity">
                     <SignedOutLinks/>

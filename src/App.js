@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
-import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import Post from './components/Post'
+import Dashboard from './components/dashboard/Dashboard'
+import ProjectDetails from './components/projects/ProjectDetails'
+
+// *Unused imports (fow now)*
+// import Post from './components/Post'
+// import Home from './components/Home'
 
 
 class App extends Component {
@@ -15,11 +19,11 @@ class App extends Component {
           <a href="/flowroom"><h3 className="brand-logo center cover">FlowRoom</h3></a>
           <Navbar />
           <Switch>
-            <Route exact path='/flowroom' component={Home} />
-            <Route path='/flowroom/home' component={Home} />
+            <Route exact path='/flowroom/' component={Dashboard} />
+            <Route path='/flowroom/dashboard' component={Dashboard} />
+            <Route path='/flowroom/project/:id' component={ProjectDetails} />
             <Route path='/flowroom/about' component={About} />
             <Route path='/flowroom/contact' component={Contact} />
-            <Route path='/flowroom/:post_id' component={Post} /> 
           </Switch>
         </div>
       </BrowserRouter>
@@ -27,6 +31,8 @@ class App extends Component {
   }
 }
 
+  // *Unused paths (for now)*
+  //<Route path='/flowroom/:post_id' component={Post} /> 
   //<Route render={() => <Redirect to={"/flowroom"}/>} />     
 
 export default App;

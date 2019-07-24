@@ -7,6 +7,7 @@ const SignedInLinks = (props) => {
             <li><Link to='/flowroom/home'></Link></li>
             <li><Link to='/flowroom/about'></Link></li>
             <li><Link to='/flowroom/contact'></Link></li>
+
         </ul>,
         <ul className="right blue darken-1 activity">
             <li><NavLink to='/'>New Project</NavLink></li>

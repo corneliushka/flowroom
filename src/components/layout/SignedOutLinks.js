@@ -7,10 +7,11 @@ const SignedOutLinks = (props) => {
             <li><Link to='/flowroom/home'></Link></li>
             <li><Link to='/flowroom/about'></Link></li>
             <li><Link to='/flowroom/contact'></Link></li>
+
         </ul>,
         <ul className="right blue darken-1 activity">
             <li><NavLink to='/'>Signup</NavLink></li>
-            <li><NavLink to='/'>Login</NavLink></li>
+            <li><NavLink to='/' className="pulse">Login</NavLink></li>
         </ul>
     )
 }
