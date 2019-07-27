@@ -5,6 +5,8 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Dashboard from './components/dashboard/Dashboard'
 import ProjectDetails from './components/projects/ProjectDetails'
+import SignIn from './components/auth/SignIn'
+import SignUp from './components/auth/SignUp'
 
 // *Unused imports (fow now)*
 // import Post from './components/Post'
@@ -22,6 +24,8 @@ class App extends Component {
             <Route exact path='/flowroom/' component={Dashboard} />
             <Route path='/flowroom/dashboard' component={Dashboard} />
             <Route path='/flowroom/project/:id' component={ProjectDetails} />
+            <Route path='/flowroom/signin' component={SignIn}/>
+            <Route path='/flowroom/signup' component={SignUp}/>
             <Route path='/flowroom/about' component={About} />
             <Route path='/flowroom/contact' component={Contact} />
           </Switch>
