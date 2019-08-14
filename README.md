@@ -1,5 +1,10 @@
+# flowroom v1 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project is based on a [Net Ninja React+Redux](https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG) tutorial/course, followed step by step.
+The UI framework is MaterializeCSS
+
+The upcoming v2 will be rewritten from scratch with Material UI and Redux Form. DB will be MongoDB & Express
 
 ## Description
 
