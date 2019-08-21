@@ -1,5 +1,5 @@
 import React from 'react'
-import Rainbow from '../highOrderComponents/Rainbow'
+import Rainbow from '../../highOrderComponents/Rainbow'
 
 const About = () => {
     return (

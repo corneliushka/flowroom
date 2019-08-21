@@ -63,3 +63,14 @@ code {
   flex-direction: row;
   justify-content: flex-start;
 } 
+
+.dropzone {
+  font-size: 2em;
+  padding: 15px;
+  border: 4px dotted blueviolet;
+  border-radius: 10px;
+}
+
+.failingUpload {
+  color: red;
+}
